@@ -342,18 +342,19 @@ nav ul li a {
 }
 
 #about .div-img-bg {
-    padding-bottom: 30px;
-    border: 20px solid #742a92;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    /* border: 20px solid #742a92; */
 }
 
 #about .div-img-bg .about-img img {
     width: 100%;
-    box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+    /* box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
     margin-top: -60px;
-    margin-left: 40px;
+    margin-left: 40px; 
     height: 400px;
     -o-object-fit: cover;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 #about .about-descr .p-heading {
