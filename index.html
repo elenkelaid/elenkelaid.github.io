@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0" />
 
   <title>Eleni Kelaiditi | QA Automation Engineer & DevOps Enthusiast</title>
 
@@ -32,7 +32,7 @@
 
   <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
+</head>
 <body>
   <!-- ======= Header / Navigation ======= -->
   <header id="header" class="modern-header">
@@ -60,30 +60,30 @@
     <div class="container">
       <div class="hero-content">
 
-        <h1>
+        <h1 data-aos="fade-up">
           <span class="typed"></span>
         </h1>
 
         <!-- Items that will be typed -->
-        <p class="typed-items" data-typed-person="Eleni Kelaiditi">
+        <p class="typed-items" data-typed-person="Eleni Kelaiditi" data-aos="fade-up" data-aos-delay="100">
           QA Automation Engineer evolving into DevOps & Platform Engineering,
           Building robust automated testing systems,
           Improving delivery workflows,
           Quality‑driven and engineering‑focused
         </p>
 
-        <div class="hero-badges">
+        <div class="hero-badges" data-aos="fade-up" data-aos-delay="200">
           <span class="hero-badge">EU Citizen</span>
           <span class="hero-badge">English & Greek</span>
           <span class="hero-badge">Learning Dutch</span>
         </div>
-        <p class="hero-description">
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
           I design scalable test automation frameworks and contribute to DevOps practices
           that improve reliability, developer experience, and delivery speed. My work
           bridges quality, automation, and engineering workflows to support high‑performing teams.
         </p>
 
-        <ul class="list-unstyled list-social">
+        <ul class="list-unstyled list-social" data-aos="fade-up" data-aos-delay="400">
           <li>
             <a href="https://www.linkedin.com/in/eleni-t-kelaiditi/">
               <i class="ion-social-linkedin"></i>
@@ -100,9 +100,9 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about-section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
 
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up" data-aos-delay="100">
           <p>
             I’m an Automation Engineer with a strong foundation in quality engineering
             and a growing focus on DevOps and platform practices. I specialize in building
@@ -125,7 +125,7 @@
     <!-- ======= Experience Section ======= -->
     <section id="experience" class="experience-section">
       <div class="container">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
 
         <div class="timeline">
 
@@ -218,66 +218,70 @@
     <!-- ======= Projects Section ======= -->
     <section id="projects" class="projects-section">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
 
-        <div class="projects-grid">
+        <div class="projects-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <div id="projectsCarousel" class="carousel slide" data-bs-interval="false">
+            
+            <div class="carousel-inner">
 
-          <div class="project-card">
-            <h3>Playwright Automation Framework</h3>
-            <p class="project-description">
-              A modular, scalable Playwright test automation framework with reusable components,
-              fixtures, reporting, and CI/CD integration.
-            </p>
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="project-card">
+                  <h3>Playwright Automation Framework</h3>
+                  <p class="project-description">
+                    A modular, scalable Playwright test automation framework with reusable components,
+                    fixtures, reporting, and CI/CD integration.
+                  </p>
 
-            <div class="project-tags">
-              <span>Playwright</span>
-              <span>TypeScript</span>
-              <span>CI/CD</span>
+                  <div class="project-tags">
+                    <span>Playwright</span>
+                    <span>TypeScript</span>
+                    <span>CI/CD</span>
+                  </div>
+
+                  <a href="https://github.com/elenkelaid/telekProject" class="project-link" target="_blank">
+                    <i class="bx bx-link-external"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p class="project-description">
+                    A modern, responsive personal portfolio built with HTML, CSS, and Bootstrap,
+                    showcasing my work, skills, and experience.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                  </div>
+
+                  <a href="https://elenkelaid.github.io" class="project-link" target="_blank">
+                    <i class="bx bx-link-external"></i> Visit Website
+                  </a>
+                </div>
+              </div>
+
             </div>
 
-            <a href="https://github.com/elenkelaid/telekProject" class="project-link" target="_blank">
-              <i class="bx bx-link-external"></i> View on GitHub
-            </a>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" aria-label="Previous">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" aria-label="Next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
           </div>
 
-
-
-          <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p class="project-description">
-              A modern, responsive personal portfolio built with HTML, CSS, and Bootstrap,
-              showcasing my work, skills, and experience.
-            </p>
-
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-            </div>
-
-            <a href="https://elenkelaid.github.io" class="project-link" target="_blank">
-              <i class="bx bx-link-external"></i> Visit Website
-            </a>
+          <div class="carousel-counter">
+            <span id="carousel-current">1</span> of <span id="carousel-total">2</span>
           </div>
-
-          <!-- <div class="project-card">
-            <h3>DevOps Learning Lab</h3>
-            <p class="project-description">
-              A personal lab environment for learning Docker, pipelines, Linux, and cloud concepts
-              through hands-on exercises and small deployments.
-            </p>
-
-            <div class="project-tags">
-              <span>Docker</span>
-              <span>Linux</span>
-              <span>DevOps</span>
-            </div>
-
-            <a href="#" class="project-link" target="_blank">
-              <i class="bx bx-link-external"></i> View on GitHub
-            </a>
-          </div> -->
-
         </div>
       </div>
     </section>
@@ -285,17 +289,17 @@
 
   </main>
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact-buttons-section">
+    <section id="contact" class="contact-buttons-section">
     <div class="container">
 
-      <h2 class="contact-buttons-title">CONTACT</h2>
+      <h2 class="contact-buttons-title" data-aos="fade-up">CONTACT</h2>
 
-      <p class="contact-buttons-subtitle">
+      <p class="contact-buttons-subtitle" data-aos="fade-up" data-aos-delay="100">
         Feel free to reach out for collaboration, questions, or just to say hello.
       </p>
 
-      <div class="availability-badge">Open to Relocation Across Europe</div>
-      <div class="contact-buttons-grid">
+      <div class="availability-badge" data-aos="fade-up" data-aos-delay="200">Open to Relocation Across Europe</div>
+      <div class="contact-buttons-grid" data-aos="fade-up" data-aos-delay="300">
 
         <a href="mailto:elenikelaiditi@gmail.com" class="contact-button">
           <i class="bx bx-envelope"></i>
@@ -338,45 +342,8 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/typed/typed.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
-  <script>
-    // Header scroll effect (clean + unified)
-    window.addEventListener("scroll", () => {
-      const header = document.querySelector(".modern-header");
-      header.classList.toggle("scrolled", window.scrollY > 20);
-    });
-
-    // Mobile nav toggle (safe)
-    const toggle = document.querySelector(".mobile-nav-toggle");
-    const navMenu = document.querySelector(".navbar ul");
-
-    if (toggle) {
-      toggle.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-      });
-    }
-  </script>
-
-  <script>
-    // Footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    // Typed.js
-    document.addEventListener("DOMContentLoaded", function () {
-      var typedStrings = document.querySelector(".typed-items").textContent.split(",");
-      new Typed(".typed", {
-        strings: typedStrings,
-        typeSpeed: 60,
-        backSpeed: 35,
-        backDelay: 1200,
-        loop: true
-      });
-    });
-  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
